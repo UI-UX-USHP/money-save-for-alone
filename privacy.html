@@ -33,7 +33,7 @@
     <p>Nếu bạn cấp quyền đọc SMS hoặc quyền truy cập thông báo, ứng dụng đọc tin nhắn và thông báo của các ngân hàng để gợi ý giao dịch, và bạn duyệt trước khi ghi. Việc đọc diễn ra trên máy. Nội dung chỉ được gửi ra ngoài khi bạn tự bật tính năng đọc bằng AI (mục 4).</p>
 
     <h2>3. Google Drive (tùy chọn)</h2>
-    <p>Khi bạn đăng nhập Google để sao lưu, ứng dụng nhận tên, địa chỉ email và ảnh đại diện của tài khoản để hiển thị tài khoản đang dùng, và xin quyền <code>drive.file</code>. Quyền này chỉ cho phép ứng dụng tạo, đọc và cập nhật các tệp sao lưu do chính ứng dụng tạo trong Google Drive của bạn. Ứng dụng không thấy, không đọc và không thay đổi bất kỳ tệp nào khác. Tệp sao lưu đi thẳng từ điện thoại tới Google Drive của bạn, không qua máy chủ nào khác.</p>
+    <p>Khi bạn đăng nhập Google để sao lưu, ứng dụng nhận tên, địa chỉ email và ảnh đại diện của tài khoản để hiển thị tài khoản đang dùng, và xin quyền <code>drive.file</code>. Quyền này chỉ cho phép ứng dụng tạo, đọc và cập nhật các tệp sao lưu do chính ứng dụng tạo trong Google Drive của bạn. Ứng dụng không thấy, không đọc và không thay đổi bất kỳ tệp nào khác. Bản sao lưu gồm tệp dữ liệu và, nếu có, ảnh hóa đơn bạn đã gắn vào giao dịch (mỗi ảnh là một tệp riêng). Tệp sao lưu đi thẳng từ điện thoại tới Google Drive của bạn, không qua máy chủ nào khác.</p>
     <p>Việc ứng dụng sử dụng và chuyển thông tin nhận được từ Google API tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Chính sách dữ liệu người dùng của Google API Services</a>, bao gồm các yêu cầu về Sử dụng giới hạn (Limited Use). Dữ liệu Google không được bán, không dùng cho quảng cáo và không chia sẻ cho bên thứ ba.</p>
 
     <h2>4. Trợ lý AI (tùy chọn)</h2>
@@ -46,7 +46,10 @@
     <p>Khi bạn quét mã VietQR bằng camera hoặc chọn ảnh có mã, việc đọc mã diễn ra trên điện thoại nhờ dịch vụ của Google Play Services. Ứng dụng không cần quyền camera và không lưu ảnh. Số tài khoản, tên người nhận, số tiền và nội dung trong mã chỉ được dùng để điền sẵn khoản chi.</p>
     <p>Nếu sau khi lưu bạn chọn mở app ngân hàng, ứng dụng mở một liên kết của dịch vụ VietQR.io (<code>dl.vietqr.io</code>) để chuyển bạn sang app ngân hàng đã chọn. Liên kết này mang số tài khoản người nhận, tên người nhận, số tiền và nội dung chuyển khoản, nên các thông tin đó đi qua máy chủ của VietQR.io và chịu chính sách của họ. Bạn có thể chọn "Không mở app" để không gửi gì ra ngoài.</p>
 
-    <h2>7. Xóa dữ liệu và thu hồi quyền</h2>
+    <h2>7. Camera và ảnh hóa đơn (tùy chọn)</h2>
+    <p>Ứng dụng chỉ chụp hoặc chọn ảnh khi bạn bấm "Chụp" hay "Chọn ảnh". Việc chụp dùng ứng dụng camera của điện thoại và việc chọn dùng trình chọn ảnh của Android, nên ứng dụng không cần quyền camera hay quyền đọc toàn bộ ảnh. Ảnh được thu nhỏ và lưu trong bộ nhớ riêng của ứng dụng. Việc đọc tổng tiền trên hóa đơn diễn ra trên điện thoại nhờ dịch vụ của Google Play Services; nội dung ảnh không được gửi đi đâu, trừ khi bạn bật sao lưu Google Drive (mục 3). Xóa giao dịch hoặc xóa ảnh trong giao dịch sẽ xóa ảnh khỏi máy.</p>
+
+    <h2>8. Xóa dữ liệu và thu hồi quyền</h2>
     <ul>
       <li>Xóa dữ liệu trong ứng dụng, hoặc gỡ ứng dụng để xóa toàn bộ dữ liệu trên máy.</li>
       <li>Xóa tệp sao lưu trong Google Drive của bạn.</li>
@@ -54,13 +57,13 @@
       <li>Tắt quyền SMS, thông báo hoặc micro trong Cài đặt của Android.</li>
     </ul>
 
-    <h2>8. Trẻ em</h2>
+    <h2>9. Trẻ em</h2>
     <p>Ứng dụng không dành cho trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
 
-    <h2>9. Thay đổi chính sách</h2>
+    <h2>10. Thay đổi chính sách</h2>
     <p>Khi chính sách thay đổi, trang này được cập nhật cùng ngày hiệu lực mới.</p>
 
-    <h2>10. Liên hệ</h2>
+    <h2>11. Liên hệ</h2>
     <p>Gửi câu hỏi về quyền riêng tư qua mục <a href="https://github.com/UI-UX-USHP/money-save-for-alone/issues">Issues</a> trên GitHub.</p>
   </main>
 
