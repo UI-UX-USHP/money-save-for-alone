@@ -27,7 +27,7 @@
     <p>Chính sách này áp dụng cho ứng dụng Android <strong>Money save for alone</strong> (tên gói <code>com.aistudio.ghichepthuchi.pfmkt</code>). Nó nói rõ ứng dụng truy cập gì, lưu ở đâu và khi nào dữ liệu rời khỏi điện thoại của bạn.</p>
 
     <h2>1. Dữ liệu lưu trên máy</h2>
-    <p>Giao dịch, ví, ngân sách, hũ tiết kiệm, sổ nợ, sự kiện, danh mục và cài đặt được lưu trong bộ nhớ của ứng dụng trên điện thoại. Ứng dụng không có máy chủ riêng, không hiển thị quảng cáo và không gửi thống kê sử dụng hay báo cáo lỗi cho bất kỳ ai. Mã PIN khóa ứng dụng và khóa API bạn nhập được lưu trên máy, khóa API được mã hóa bằng Android Keystore.</p>
+    <p>Giao dịch, ví, ngân sách, hũ tiết kiệm, sổ nợ, sự kiện, danh mục, tài sản, sổ hiếu hỷ, hợp đồng bảo hiểm và cài đặt được lưu trong bộ nhớ của ứng dụng trên điện thoại. Ứng dụng không có máy chủ riêng, không hiển thị quảng cáo và không gửi thống kê sử dụng hay báo cáo lỗi cho bất kỳ ai. Mã PIN khóa ứng dụng và khóa API bạn nhập được lưu trên máy, khóa API được mã hóa bằng Android Keystore.</p>
 
     <h2>2. Tin nhắn và thông báo ngân hàng (tùy chọn)</h2>
     <p>Nếu bạn cấp quyền đọc SMS hoặc quyền truy cập thông báo, ứng dụng đọc tin nhắn và thông báo của các ngân hàng để gợi ý giao dịch, và bạn duyệt trước khi ghi. Việc đọc diễn ra trên máy. Nội dung chỉ được gửi ra ngoài khi bạn tự bật tính năng đọc bằng AI (mục 4).</p>
@@ -44,14 +44,17 @@
 
     <h2>6. Quét mã QR và mở app ngân hàng (tùy chọn)</h2>
     <p>Khi bạn quét mã VietQR bằng camera hoặc chọn ảnh có mã, việc đọc mã diễn ra trên điện thoại nhờ dịch vụ của Google Play Services. Ứng dụng không cần quyền camera và không lưu ảnh. Số tài khoản, tên người nhận, số tiền và nội dung trong mã chỉ được dùng để điền sẵn khoản chi.</p>
-    <p>Sau khi lưu, ứng dụng chép sẵn số tài khoản vào bộ nhớ tạm và mở app ngân hàng bạn chọn. Ứng dụng cần biết những app ngân hàng nào đã được cài để xếp chúng lên đầu danh sách. Với đa số ngân hàng, ứng dụng mở thẳng app và không gửi dữ liệu ra ngoài.</p>
+    <p>Sau khi lưu, ứng dụng chép sẵn số tài khoản vào bộ nhớ tạm và mở app ngân hàng bạn chọn. Ứng dụng cần biết những app ngân hàng nào đã được cài để xếp chúng lên đầu danh sách. Với đa số ngân hàng và ví MoMo, ứng dụng mở thẳng app và không gửi dữ liệu ra ngoài.</p>
     <p>Với các ngân hàng hỗ trợ điền sẵn (hiện là MB, VietinBank, BIDV, OCB và ACB), ứng dụng mặc định mở một liên kết của dịch vụ VietQR.io (<code>dl.vietqr.io</code>). Liên kết này mang số tài khoản người nhận, tên người nhận, số tiền và nội dung chuyển khoản, nên các thông tin đó đi qua máy chủ của VietQR.io và chịu chính sách của họ. Bạn vẫn có thể chọn "Mở thẳng app" trong thông báo, hoặc chọn "Không mở app" để không gửi gì ra ngoài.</p>
     <p>Nếu bạn bật đọc thông báo ngân hàng, khoản chi từ mã QR chỉ được ghi khi thông báo trừ tiền của ngân hàng về trên máy. Việc ghép thông báo với khoản chi diễn ra trên điện thoại.</p>
 
     <h2>7. Camera và ảnh hóa đơn (tùy chọn)</h2>
     <p>Ứng dụng chỉ chụp hoặc chọn ảnh khi bạn bấm "Chụp" hay "Chọn ảnh". Việc chụp dùng ứng dụng camera của điện thoại và việc chọn dùng trình chọn ảnh của Android, nên ứng dụng không cần quyền camera hay quyền đọc toàn bộ ảnh. Ảnh được thu nhỏ và lưu trong bộ nhớ riêng của ứng dụng. Việc đọc tổng tiền trên hóa đơn diễn ra trên điện thoại nhờ dịch vụ của Google Play Services; nội dung ảnh không được gửi đi đâu, trừ khi bạn bật sao lưu Google Drive (mục 3). Xóa giao dịch hoặc xóa ảnh trong giao dịch sẽ xóa ảnh khỏi máy.</p>
 
-    <h2>8. Xóa dữ liệu và thu hồi quyền</h2>
+    <h2>8. Tỷ giá ngoại tệ (tùy chọn)</h2>
+    <p>Giá vàng và tài sản khác do bạn tự nhập. Chỉ khi bạn bấm "Cập nhật tỷ giá" trong mục Tài sản, ứng dụng mới tải bảng tỷ giá công khai của Vietcombank (<code>portal.vietcombank.com.vn</code>) để cập nhật giá ngoại tệ. Yêu cầu này không mang theo dữ liệu nào của bạn; Vietcombank chỉ thấy địa chỉ mạng của điện thoại như mọi lần truy cập web.</p>
+
+    <h2>9. Xóa dữ liệu và thu hồi quyền</h2>
     <ul>
       <li>Xóa dữ liệu trong ứng dụng, hoặc gỡ ứng dụng để xóa toàn bộ dữ liệu trên máy.</li>
       <li>Xóa tệp sao lưu trong Google Drive của bạn.</li>
@@ -59,13 +62,13 @@
       <li>Tắt quyền SMS, thông báo hoặc micro trong Cài đặt của Android.</li>
     </ul>
 
-    <h2>9. Trẻ em</h2>
+    <h2>10. Trẻ em</h2>
     <p>Ứng dụng không dành cho trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
 
-    <h2>10. Thay đổi chính sách</h2>
+    <h2>11. Thay đổi chính sách</h2>
     <p>Khi chính sách thay đổi, trang này được cập nhật cùng ngày hiệu lực mới.</p>
 
-    <h2>11. Liên hệ</h2>
+    <h2>12. Liên hệ</h2>
     <p>Gửi câu hỏi về quyền riêng tư qua mục <a href="https://github.com/UI-UX-USHP/money-save-for-alone/issues">Issues</a> trên GitHub.</p>
   </main>
 
